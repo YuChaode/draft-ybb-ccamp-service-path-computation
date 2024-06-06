@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-04T00:57:18.884225+00:00",
+  "timestamp": "2024-06-06T00:56:54.101021+00:00",
   "repo": "YuChaode/draft-ybb-ccamp-service-path-computation",
   "labels": [
     {
@@ -50,5 +50,32 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOL_80IM5xiTnl",
+      "title": "Update draft-ybb-ccamp-service-path-computation.md",
+      "url": "https://github.com/YuChaode/draft-ybb-ccamp-service-path-computation/pull/1",
+      "state": "OPEN",
+      "author": "YuChaode",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Create an initial draft",
+      "createdAt": "2024-06-05T10:46:33Z",
+      "updatedAt": "2024-06-05T10:47:15Z",
+      "baseRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
+      "baseRefName": "main",
+      "baseRefOid": "269d37c4f302df7e12de9d640b3ed008390f38f9",
+      "headRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
+      "headRefName": "initial-draft",
+      "headRefOid": "39a87c0054ef78bc454d2781ee35a28af0a6f52a",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
