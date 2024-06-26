@@ -25,7 +25,7 @@ venue:
 
 author:
  -
-    fullname: "Chaode Yu"
+    name: Chaode Yu
     organization: Huawei Technologies
     email: "yuchaode@huawei.com"
  -
@@ -90,7 +90,7 @@ We also focus on addressing some undiscussed requirements, such as how to ultize
 
 ## Tree Diagram
 
-A simplified graphical representation of the data model is used in {{ spp-tree}} of this document.
+A simplified graphical representation of the data model is used in {{spp-tree}} of this document.
 The meaning of the symbols in this diagram is defined in {{!RFC8340}}.
 
 ## Prefix in Data Node Names
@@ -101,13 +101,13 @@ The meaning of the symbols in this diagram is defined in {{!RFC8340}}.
 
 | Prefix    | Yang Module                     | Reference     |
 | --------- | ------------------------------- | ------------- |
-| clntsvc   | ietf-trans-client-service       | RFC XXXX      |
-| clnsvcpc  | ietf-clnt-svc-path-computation     | RFC YYYY  |
-
+| clnt-svc   | ietf-trans-client-service       | \[RFCYYYY]      |
+| clnt-svc-pc  | ietf-trans-client-path-computation     | RFC XXXX  |
 {: #tab-prefixes title="Prefixes and corresponding YANG modules"}
 
 RFC Editor Note:
-Please replace XXXX and YYYY with the RFC number assigned to this document.
+Please replace XXXX with the number assigned to the RFC once this draft becomes an RFC.
+Please replace YYYY with the RFC numbers assigned to {{!I-D.ietf-ccamp-client-signal-yang}}.
 Please remove this note.
 
 # End to End Management of Transport Network Client Signal Service
@@ -133,27 +133,26 @@ The {{fig-rel-eth-service-tunnel}} shows the hierarchical relationship of Ethern
 ~~~~
 {: #fig-rel-eth-service-tunnel title="Ethernet Client Signal Service and its Server tunnel"}
 
-The reference method is defined in the {{!draft-ietf-ccamp-client-signal-yang}}. The supporting relationship between the tunnels can be also found by the dependency-tunnel structure define by the {{!draft-ietf-teas-yang-te}}.
+The reference method is defined in the {{!I-D.ietf-ccamp-client-signal-yang}}. The supporting relationship between the tunnels can be also found by the dependency-tunnel structure define by the {{!I-D.ietf-teas-yang-te}}.
 
 # Requirements for Service Path Computation
 
 ## Top-down Approach
 For the Top-down approach, the path computation request should be based on client signal service. It is needed to specify the source and destination access port of in the request. In addition, some common parameters, such as number of path to be calculated, protection and restoration capabities, path computation policy and path constraint (see {{path-constraint}}).etc.
-The path computation result should contain all the layers' path information. For the OTN tunnel and WDM tunnel, it can be existing 
+The path computation result should contain all the layers' path information. For the OTN tunnel and WDM tunnel, it can be existing
 
 
 
 ## Multi-layer Path Display
 
-{{path-constraint}}
-## Path Constraint
+## Path Constraint {#path-constraint}
 
 ## Path Management
 ### Saving of Path Computation Result
 
 ### Path Reference in Service Provisioning
 
-# Tree Diagram for Service Path Computation
+# Tree Diagram for Service Path Computation {#spp-tree}
 
 
 # YANG Data Model for Service Path Computation
