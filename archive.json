@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-25T00:57:49.764446+00:00",
+  "timestamp": "2024-06-27T00:58:08.520079+00:00",
   "repo": "YuChaode/draft-ybb-ccamp-service-path-computation",
   "labels": [
     {
@@ -63,19 +63,160 @@
       "labels": [],
       "body": "Create an initial draft",
       "createdAt": "2024-06-05T10:46:33Z",
-      "updatedAt": "2024-06-05T10:47:15Z",
+      "updatedAt": "2024-06-26T13:58:52Z",
       "baseRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
       "baseRefName": "main",
       "baseRefOid": "269d37c4f302df7e12de9d640b3ed008390f38f9",
       "headRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
       "headRefName": "initial-draft",
-      "headRefOid": "39a87c0054ef78bc454d2781ee35a28af0a6f52a",
+      "headRefOid": "ce49c7ef7af59486df4b754c9158f41a8ad48c5c",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOL_80IM598Lqm",
+          "commit": {
+            "abbreviatedOid": "39a87c0"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-06-12T12:51:05Z",
+          "updatedAt": "2024-06-26T09:07:47Z",
+          "comments": [
+            {
+              "originalPosition": 53,
+              "body": "editorial: network management funcation/s/ network management function\r\nMoreover I would rephrase a bit the text . My suggestion:\r\n\"the OTN layering structure include lower-order ODUk, high-order ODUk and OTUk trails.\"\r\n\"The WDM layering structure include OTS, OMS and OCh trail\"\r\nbelow:\r\n\"the path computation is performed from lower layers to higher layer. This is called bottom-up approach\".\r\n\r\nQuestion : is still OCH used or shpuld we use OTSiA instead ?",
+              "createdAt": "2024-06-12T12:51:05Z",
+              "updatedAt": "2024-06-26T09:07:47Z"
+            },
+            {
+              "originalPosition": 59,
+              "body": "I think we need to add definition of transparent vs. non-transparent client signal \r\nMoreover I gues here it is needed to describe the requirement , that means what is top-down approach and why this is required against bottom-up approach. \r\nI'm not comfortable with the present wording. \r\nWe should better describe why client and server should interact many times in bottom up approach wrt the top-down ? \r\n",
+              "createdAt": "2024-06-12T12:57:43Z",
+              "updatedAt": "2024-06-26T09:07:47Z"
+            },
+            {
+              "originalPosition": 56,
+              "body": "funcation/s/function\r\nnot sure to have understood what this couple of sentences would mean as disadvantages for botton-up approach. We should reword this part . ",
+              "createdAt": "2024-06-12T13:01:10Z",
+              "updatedAt": "2024-06-26T09:07:47Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOL_80IM5_jBQe",
+          "commit": {
+            "abbreviatedOid": "39a87c0"
+          },
+          "author": "italobusi",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "Few comments:\r\n\r\n1) I am not sure OTS and OMS can be defined as trail according to latest ITU-T Recommendations\r\n\r\n   I am also not sure about the OCh trail. And what about OTSiA?\r\n\r\n   We may consider the terms defined in other IETF drafts, such as OTN Tunnel, WDM Tunnel, OMS MCG and OTS MCG\r\n\r\n2) I would describe the top-down and bottom-up approaches in terms of path setup rather than in terms of path computation\r\n\r\n   IMHO, with bottom-up, there is no need for path computation in the client signal while this is required for the top-down approach\r\n\r\n3) I would avoid the term 'disadvantage' when talking about bottom-up\r\n\r\n   The bottom-up approach is more suitable in cases where the server layer tunnel is setup based on some planning of capacity to be provided in the client layer or when the multi-laye path computation or the decision of which tunnel to setup to support a client service is performed by the client controller.\r\n\r\n   A top-down approach is more suitable for the cases where the multi-layer path computation or the decision of which tunnel to setup to support a client service is delegated to the server controller.\r\n\r\n   Please note also that the YANG datastore architecture is design to support multiple interactions between the client and server controllers: we can further talk about this point offline\r\n\r\n4) I would say that the figures in the section on end-to-end management, are just examples\r\n\r\n   We can have scenarios where the transparent client signal is carried over a WDM tunnel (without an intermediate OTN tunnel).\r\n\r\n   I do not know how likely it this case but nothing precludes to configure a transparent clietn signal over an OTN network with only grey interfaces: in this case, there are no WDM tunnels underneath the OTN tunnel.\r\n\r\n   There can also be cases where a lower-order OTN tunnel is relying on a server-layer higher-order OTN tunnel.\r\n\r\n5) I would be careful when using the term 'transport' in IETF which can have multiple meanings.\r\n\r\n   We should try to use the term 'transport network' to avoid any ambiguity",
+          "createdAt": "2024-06-25T21:18:52Z",
+          "updatedAt": "2024-06-26T13:12:27Z",
+          "comments": [
+            {
+              "originalPosition": 95,
+              "body": "It is suggested to:\r\n- align the prefix for ietf-trans-client-service with [draft-ietf-ccamp-client-signal-yang-12](https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-12) \r\n- rename the path computation YANG module to show relationship with the corresponding client signal model \r\n- shorten the prefix for the path computation YANG module\r\n- follow the convention for RFC XXXX and RFC YYYY references:\r\n\r\n```suggestion\r\n| clnt-svc   | ietf-trans-client-service       | RFC XXXX      |\r\n| cln-pc  | ietf-trans-client-path-computation     | \\[RFCYYYY]  |\r\n```\r\n\r\nWhat about Ethernet client signal and path computation model?",
+              "createdAt": "2024-06-25T21:18:52Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 101,
+              "body": "RFC YYYY should be the RFC number assigned to [draft-ietf-ccamp-client-signal-yang](https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang) \r\n\r\n```suggestion\r\nRFC Editor Note:\r\nPlease replace XXXX with the number assigned to the RFC once this draft becomes an RFC.\r\nPlease replace YYYY with the RFC numbers assigned to {{!I-D.ietf-ccamp-client-signal-yang}}.\r\nPlease remove this note.\r\n```",
+              "createdAt": "2024-06-25T21:20:49Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 16,
+              "body": "```suggestion\r\n    name: Chaode Yu\r\n```",
+              "createdAt": "2024-06-25T21:56:43Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 83,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\nA simplified graphical representation of the data model is used in {{spp-tree}} of this document.\r\n```",
+              "createdAt": "2024-06-25T21:57:29Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 97,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\n{: #tab-prefixes title=\"Prefixes and corresponding YANG modules\"}\r\n```",
+              "createdAt": "2024-06-25T21:57:49Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 126,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\nThe reference method is defined in the {{!I-D.ietf-ccamp-client-signal-yang}}. The supporting relationship between the tunnels can be also found by the dependency-tunnel structure define by the {{!I-D.ietf-teas-yang-te}}.\r\n```",
+              "createdAt": "2024-06-25T21:59:11Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 132,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\nThe path computation result should contain all the layers' path information. For the OTN tunnel and WDM tunnel, it can be existing\r\n```",
+              "createdAt": "2024-06-25T21:59:46Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 139,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\n## Path Constraint {#path-constraint}\r\n```\r\n",
+              "createdAt": "2024-06-25T22:00:19Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            },
+            {
+              "originalPosition": 146,
+              "body": "Fix kramdown syntax error:\r\n\r\n```suggestion\r\n# Tree Diagram for Service Path Computation {#spp-tree}\r\n```",
+              "createdAt": "2024-06-25T22:00:49Z",
+              "updatedAt": "2024-06-26T13:09:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOL_80IM5_qzVf",
+          "commit": {
+            "abbreviatedOid": "39a87c0"
+          },
+          "author": "italobusi",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-06-26T13:49:23Z",
+          "updatedAt": "2024-06-26T13:49:24Z",
+          "comments": [
+            {
+              "originalPosition": 59,
+              "body": "**2024-06-26 Weekly Call**\r\n\r\nAgreement:\r\n- reference the client signal draft for the definition of transparent and non-transparent client signal\r\n- reconsider to update the terminology in a future version of both this draft and the client signal draft",
+              "createdAt": "2024-06-26T13:49:24Z",
+              "updatedAt": "2024-06-26T13:49:24Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOL_80IM5_q3PT",
+          "commit": {
+            "abbreviatedOid": "39a87c0"
+          },
+          "author": "italobusi",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-06-26T13:53:49Z",
+          "updatedAt": "2024-06-26T13:53:49Z",
+          "comments": [
+            {
+              "originalPosition": 95,
+              "body": "```suggestion\r\n| clnt-svc   | ietf-trans-client-service       | \\[RFCYYYY]      |\r\n| clnt-svc-pc  | ietf-trans-client-path-computation     | RFC XXXX  |\r\n```",
+              "createdAt": "2024-06-26T13:53:49Z",
+              "updatedAt": "2024-06-26T13:53:49Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
