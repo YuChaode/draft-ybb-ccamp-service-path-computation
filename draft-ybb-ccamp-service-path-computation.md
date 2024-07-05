@@ -25,9 +25,9 @@ venue:
 
 author:
  -
-    name: "Chaode Yu"
+    name: Chaode Yu
     org: Huawei Technologies
-    email: "yuchaode@huawei.com"
+    email: yuchaode@huawei.com
  -
     name: Sergio Belotti
     org: Nokia
@@ -90,7 +90,7 @@ We also focus on addressing some undiscussed requirements, such as how to ultize
 
 ## Tree Diagram
 
-A simplified graphical representation of the data model is used in {{ spp-tree}} of this document.
+A simplified graphical representation of the data model is used in {{spp-tree}} of this document.
 The meaning of the symbols in this diagram is defined in {{!RFC8340}}.
 
 ## Prefix in Data Node Names
@@ -101,13 +101,13 @@ The meaning of the symbols in this diagram is defined in {{!RFC8340}}.
 
 | Prefix    | Yang Module                     | Reference     |
 | --------- | ------------------------------- | ------------- |
-| clntsvc   | ietf-trans-client-service       | RFC XXXX      |
-| clnsvcpc  | ietf-clnt-svc-path-computation     | RFC YYYY  |
-
+| clnt-svc   | ietf-trans-client-service       | \[RFCYYYY]      |
+| clnt-svc-pc  | ietf-trans-client-path-computation     | RFC XXXX  |
 {: #tab-prefixes title="Prefixes and corresponding YANG modules"}
 
 RFC Editor Note:
-Please replace XXXX and YYYY with the RFC number assigned to this document.
+Please replace XXXX with the number assigned to the RFC once this draft becomes an RFC.
+Please replace YYYY with the RFC numbers assigned to {{!I-D.ietf-ccamp-client-signal-yang}}.
 Please remove this note.
 
 # End to End Management of Transport Network Client Signal Service
@@ -133,7 +133,7 @@ The {{fig-rel-eth-service-tunnel}} shows the hierarchical relationship of Ethern
 ~~~~
 {: #fig-rel-eth-service-tunnel title="Ethernet Client Signal Service and its Server tunnel"}
 
-The reference method is defined in the {{!draft-ietf-ccamp-client-signal-yang}}. The supporting relationship between the tunnels can be also found by the dependency-tunnel structure define by the {{!draft-ietf-teas-yang-te}}.
+The reference method is defined in the {{!I-D.ietf-ccamp-client-signal-yang}}. The supporting relationship between the tunnels can be also found by the dependency-tunnel structure define by the {{!I-D.ietf-teas-yang-te}}.
 
 # Requirements for Service Path Computation
 
@@ -161,7 +161,7 @@ rpcs:
       |     |  +--ro route-object-exclude-object* [index]
       |     +--ro explicit-route-include-objects
       |        +--ro route-object-include-object* [index]
-      +--ro output    
+      +--ro output
          +--ro result* [request-id]
             +--ro request-id                string
             +--ro result-code?              enumeration
@@ -241,8 +241,8 @@ This document provides a generic structure in a list to present the actual path 
 
 ~~~~
 
-{{path-constraint}}
-## Path Constraint
+## Path Constraint {#path-constraint}
+
 It is common for service path computation request to specify path constrain like node/link-tp inclusion/exclusion like TE tunnel path computation. And service path computation needs to support some more kind of path constraint, such as to specify service/tunnel/path included/excluded. There are also scenarios to specify path constrain across layers. For example, some people would like to specify a WDM node included/excluded or wavelength in the service path computation.
 
 ~~~~ ascii-art
@@ -338,13 +338,14 @@ module: ietf-trans-client-service-path-computation
 ~~~~
 
 ### Path Reference in Service Provisioning
+
 In the current service provisioning approach, the MDSC needs to specify the correlation of tunnel underlay. If the path computation result is saved in the domain controller. It is much easier to reference the path computation result instead of specifying tunnel underlay to do the provisioning.
 
 ~~~~ ascii-art
-
+To be added
 ~~~~
 
-# Tree Diagram for Service Path Computation
+# Tree Diagram for Service Path Computation {#spp-tree}
 ~~~~ ascii-art
 {::include ./ietf-trans-client-service-path-computation.tree}
 ~~~~
