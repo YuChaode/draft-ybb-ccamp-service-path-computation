@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-04T00:58:39.609777+00:00",
+  "timestamp": "2024-07-07T01:03:40.563933+00:00",
   "repo": "YuChaode/draft-ybb-ccamp-service-path-computation",
   "labels": [
     {
@@ -63,13 +63,13 @@
       "labels": [],
       "body": "Create an initial draft",
       "createdAt": "2024-06-05T10:46:33Z",
-      "updatedAt": "2024-06-26T13:58:52Z",
+      "updatedAt": "2024-07-05T16:48:55Z",
       "baseRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
       "baseRefName": "main",
       "baseRefOid": "269d37c4f302df7e12de9d640b3ed008390f38f9",
       "headRepository": "YuChaode/draft-ybb-ccamp-service-path-computation",
       "headRefName": "initial-draft",
-      "headRefOid": "ce49c7ef7af59486df4b754c9158f41a8ad48c5c",
+      "headRefOid": "d12aef2c7e44787c602468dd50dee6d00e1f545e",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
