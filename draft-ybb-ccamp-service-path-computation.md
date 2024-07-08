@@ -347,17 +347,17 @@ To be added
 
 # Tree Diagram for Service Path Computation {#spp-tree}
 ~~~~ ascii-art
-{::include ./ietf-trans-client-service-path-computation.tree}
+{::include ./yang/ietf-trans-client-service-path-computation.tree}
 ~~~~
 {: #fig-spc-tree title="Service path computation tree diagram"
 artwork-name="ietf-trans-client-service-path-computation.tree"}
 
 # YANG Data Model for Service Path Computation
 ~~~~ yang
-{::include ./ietf-trans-client-service-path-computation.yang}
+{::include ./yang/ietf-trans-client-service-path-computation.yang}
 ~~~~
 {: #fig-rpm-yang title="Service Path Computation YANG module"
-sourcecode-markers="true" sourcecode-name="ietf-trans-client-service-path-computation@2024-06-26.yang"}
+sourcecode-markers="true" sourcecode-name="ietf-trans-client-service-path-computation@2024-07-07.yang"}
 
 # Conventions and Definitions
 
