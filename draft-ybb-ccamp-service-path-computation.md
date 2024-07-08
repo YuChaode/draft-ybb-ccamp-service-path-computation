@@ -350,7 +350,7 @@ To be added
 {::include ./ietf-trans-client-service-path-computation.tree}
 ~~~~
 {: #fig-spc-tree title="Service path computation tree diagram"
-artwork-name="etf-trans-client-service-path-computation.tree"}
+artwork-name="ietf-trans-client-service-path-computation.tree"}
 
 # YANG Data Model for Service Path Computation
 ~~~~ yang
