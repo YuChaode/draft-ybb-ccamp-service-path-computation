@@ -346,6 +346,7 @@ To be added
 ~~~~
 
 # Tree Diagram for Service Path Computation {#spp-tree}
+
 ~~~~ ascii-art
 {::include ./yang/ietf-trans-client-service-path-computation.tree}
 ~~~~
@@ -353,6 +354,7 @@ To be added
 artwork-name="ietf-trans-client-service-path-computation.tree"}
 
 # YANG Data Model for Service Path Computation
+
 ~~~~ yang
 {::include ./yang/ietf-trans-client-service-path-computation.yang}
 ~~~~
@@ -362,7 +364,6 @@ sourcecode-markers="true" sourcecode-name="ietf-trans-client-service-path-comput
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
-
 
 # Security Considerations
 
@@ -376,12 +377,8 @@ This document has no IANA actions.
 
 --- back
 
-# Acknowledgments
 {:numbered="false"}
 
-This document was prepared using kramdown.
-
 # Acknowledgments
-{:numbered="false"}
 
 This document was prepared using kramdown.
