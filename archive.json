@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-23T01:00:15.466647+00:00",
+  "timestamp": "2024-07-25T01:00:05.453595+00:00",
   "repo": "YuChaode/draft-ybb-ccamp-service-path-computation",
   "labels": [
     {
@@ -63,6 +63,22 @@
       "body": "[error.log](https://github.com/user-attachments/files/16122307/error.log)\r\n",
       "createdAt": "2024-07-08T03:16:24Z",
       "updatedAt": "2024-07-08T03:16:24Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOL_80IM6QwcEC",
+      "title": "Redesign the path storage mechanism",
+      "url": "https://github.com/YuChaode/draft-ybb-ccamp-service-path-computation/issues/3",
+      "state": "OPEN",
+      "author": "YuChaode",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Reuse the logic of TE path computation draft storage.",
+      "createdAt": "2024-07-24T23:13:58Z",
+      "updatedAt": "2024-07-24T23:13:58Z",
       "closedAt": null,
       "comments": []
     }
