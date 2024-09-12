@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-10T01:05:21.099558+00:00",
+  "timestamp": "2024-09-12T01:04:30.078366+00:00",
   "repo": "YuChaode/draft-ybb-ccamp-service-path-computation",
   "labels": [
     {
@@ -79,6 +79,38 @@
       "body": "Reuse the logic of TE path computation draft storage.",
       "createdAt": "2024-07-24T23:13:58Z",
       "updatedAt": "2024-07-24T23:13:58Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOL_80IM6V7Gss",
+      "title": "How to define the protection and restoration of service?",
+      "url": "https://github.com/YuChaode/draft-ybb-ccamp-service-path-computation/issues/4",
+      "state": "OPEN",
+      "author": "YuChaode",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "The protection and restoration of service depends on the corresponding capabilities of underlay tunnel. But there are multiple layers of underlay tunnels, the WDM tunnel may be unprotected while the OTN tunnel is protected, or the WDM tunnel maybe protected while the OTN tunnel is unprotected. Then how to distinguish these two scenarios on the modeling of service?",
+      "createdAt": "2024-09-10T03:09:13Z",
+      "updatedAt": "2024-09-10T03:09:13Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOL_80IM6V7Gz7",
+      "title": "How to support DNI protection scenario?",
+      "url": "https://github.com/YuChaode/draft-ybb-ccamp-service-path-computation/issues/5",
+      "state": "OPEN",
+      "author": "YuChaode",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-09-10T03:09:44Z",
+      "updatedAt": "2024-09-10T03:09:44Z",
       "closedAt": null,
       "comments": []
     }
