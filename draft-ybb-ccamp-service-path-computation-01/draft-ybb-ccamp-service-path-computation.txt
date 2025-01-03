@@ -5,14 +5,14 @@
 Common Control and Measurement Plane                               C. Yu
 Internet-Draft                                       Huawei Technologies
 Intended status: Standards Track                              S. Belotti
-Expires: 9 January 2025                                            Nokia
+Expires: 7 July 2025                                               Nokia
                                                                  I. Busi
                                                      Huawei Technologies
                                                                   A. Guo
                                                   Futurewei Technologies
                                                                D. Beller
                                                                    Nokia
-                                                             8 July 2024
+                                                          3 January 2025
 
 
              A YANG Data Model for Service Path Computation
@@ -56,11 +56,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 9 January 2025.
+   This Internet-Draft will expire on 7 July 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1256,17 +1256,17 @@ module: ietf-trans-client-service-path-computation
               Zheng, H., Guo, A., Busi, I., Snitser, A., and C. Yu, "A
               YANG Data Model for Transport Network Client Signals",
               Work in Progress, Internet-Draft, draft-ietf-ccamp-client-
-              signal-yang-12, 29 January 2024,
+              signal-yang-13, 1 August 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
-              client-signal-yang-12>.
+              client-signal-yang-13>.
 
    [I-D.ietf-teas-yang-te]
               Saad, T., Gandhi, R., Liu, X., Beeram, V. P., and I.
               Bryskin, "A YANG Data Model for Traffic Engineering
               Tunnels, Label Switched Paths and Interfaces", Work in
-              Progress, Internet-Draft, draft-ietf-teas-yang-te-36, 2
-              February 2024, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-teas-yang-te-36>.
+              Progress, Internet-Draft, draft-ietf-teas-yang-te-37, 9
+              October 2024, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-teas-yang-te-37>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
