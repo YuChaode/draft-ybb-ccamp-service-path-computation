@@ -1,3 +1,5 @@
+<!-- regenerate: on (set to off if you edit this file) -->
+
 # A YANG Data Model for Service Path Computation
 
 This is the working area for the individual Internet-Draft, "A YANG Data Model for Service Path Computation".
