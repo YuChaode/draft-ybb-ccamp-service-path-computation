@@ -2,17 +2,17 @@
 
 
 
-Common Control and Measurement Plane                               C. Yu
-Internet-Draft                                       Huawei Technologies
+CCAMP Working Group                                                X. Li
+Internet-Draft                                                    Huawei
 Intended status: Standards Track                              S. Belotti
-Expires: 11 July 2026                                              Nokia
+Expires: 7 January 2027                                            Nokia
                                                                  I. Busi
                                                      Huawei Technologies
                                                                   A. Guo
                                                   Futurewei Technologies
                                                                D. Beller
                                                                    Nokia
-                                                          7 January 2026
+                                                             6 July 2026
 
 
              A YANG Data Model for Service Path Computation
@@ -33,10 +33,10 @@ About This Document
    for this document may be found at https://datatracker.ietf.org/doc/
    draft-ybb-ccamp-service-path-computation/.
 
-   Discussion of this document takes place on the Common Control and
-   Measurement Plane Working Group mailing list (mailto:ccamp@ietf.org),
-   which is archived at https://mailarchive.ietf.org/arch/browse/ccamp/.
-   Subscribe at https://www.ietf.org/mailman/listinfo/ccamp/.
+   Discussion of this document takes place on the CCAMP Working Group
+   Working Group mailing list (mailto:ccamp@ietf.org), which is archived
+   at https://mailarchive.ietf.org/arch/browse/ccamp/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/ccamp/.
 
    Source for this draft and an issue tracker can be found at
    https://github.com/YuChaode/draft-ybb-ccamp-service-path-computation.
@@ -56,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 July 2026.
+   This Internet-Draft will expire on 7 January 2027.
 
 Copyright Notice
 
@@ -93,6 +93,7 @@ Table of Contents
    8.  IANA Considerations
    9.  Normative References
    Acknowledgments
+   Contributors
    Authors' Addresses
 
 1.  Introduction
@@ -1256,17 +1257,17 @@ module: ietf-trans-client-service-path-computation
               Zheng, H., Guo, A., Busi, I., Snitser, A., and C. Yu, "A
               YANG Data Model for Transport Network Client Signals",
               Work in Progress, Internet-Draft, draft-ietf-ccamp-client-
-              signal-yang-16, 28 July 2025,
+              signal-yang-17, 4 February 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
-              client-signal-yang-16>.
+              client-signal-yang-17>.
 
    [I-D.ietf-teas-yang-te]
               Saad, T., Gandhi, R., Liu, X., Beeram, V. P., and I.
               Bryskin, "A YANG Data Model for Traffic Engineering
               Tunnels, Label Switched Paths, and Interfaces", Work in
-              Progress, Internet-Draft, draft-ietf-teas-yang-te-40, 2
-              November 2025, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-teas-yang-te-40>.
+              Progress, Internet-Draft, draft-ietf-teas-yang-te-44, 26
+              March 2026, <https://datatracker.ietf.org/doc/html/draft-
+              ietf-teas-yang-te-44>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -1289,11 +1290,18 @@ Acknowledgments
 
    This document was prepared using kramdown.
 
-Authors' Addresses
+Contributors
 
    Chaode Yu
    Huawei Technologies
    Email: yuchaode@huawei.com
+
+
+Authors' Addresses
+
+   Xiao Li
+   Huawei
+   Email: lixiao33@huawei.com
 
 
    Sergio Belotti
