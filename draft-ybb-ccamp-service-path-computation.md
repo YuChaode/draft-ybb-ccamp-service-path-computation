@@ -10,13 +10,13 @@ date:
 consensus: true
 v: 3
 area: "Routing"
-workgroup: "Common Control and Measurement Plane"
+workgroup: "CCAMP Working Group"
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: "Common Control and Measurement Plane"
+  group: "CCAMP Working Group"
   type: "Working Group"
   mail: "ccamp@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/ccamp/"
@@ -24,26 +24,32 @@ venue:
   latest: "https://YuChaode.github.io/draft-ybb-ccamp-service-path-computation/draft-ybb-ccamp-service-path-computation.html"
 
 author:
- -
-    name: Chaode Yu
-    org: Huawei Technologies
-    email: yuchaode@huawei.com
- -
+  -
+    fullname: Xiao Li
+    organization: Huawei
+    email: lixiao33@huawei.com
+  -
     name: Sergio Belotti
     org: Nokia
     email: sergio.belotti@nokia.com
- -
+  -
     name: Italo Busi
     org: Huawei Technologies
     email: italo.busi@huawei.com
- -
+  -
     name: Aihua Guo
     org: Futurewei Technologies
     email: aihuaguo.ietf@gmail.com
- -
+  -
     name: Dieter Beller
     org: Nokia
     email: dieter.beller@nokia.com
+
+contributor:
+  -
+    name: Chaode Yu
+    org: Huawei Technologies
+    email: yuchaode@huawei.com
 
 normative:
 
